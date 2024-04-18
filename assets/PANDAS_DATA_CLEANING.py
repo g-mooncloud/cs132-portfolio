@@ -33,5 +33,3 @@ print()
 print(survey_df_cleansed.columns)
 print()
 print(survey_df_cleansed.shape)
-
-# survey_df_cleansed.to_csv(r'C:\Users\Shane\Documents\CS 132 PROJECT\DATA_CLEANING\Dataset_Cleansed.csv')
