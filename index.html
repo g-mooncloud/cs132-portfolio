@@ -12,7 +12,6 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
-		
 
 		<!-- Nav -->
 			<nav id="nav">
@@ -37,7 +36,10 @@
 								<h1>Hi. We are <strong>Gaussian Gang</strong>.</h1>
 							</header>
 							<p>And this is our project, <strong>Project Title</strong>.
-								A data exploration journey where we delve into women’s perception of HIV. Armed with laptops(+coffee:>) and curiosity, we aim to uncover how education shapes attitudes towards HIV among women. While we’re just students with data in hand, we hope to stimulate discussions and contribute to the development of targeted programs and educational campaigns aimed at addressing HIV among women.
+								A data exploration journey where we delve into women’s perception of HIV. Armed with laptops(+coffee:>) and curiosity, 
+								we aim to uncover how education shapes attitudes towards HIV among women. While we’re just students with data in hand, 
+								we hope to stimulate discussions and contribute to the development of targeted programs and educational campaigns aimed 
+								at addressing HIV among women.
 							</p>
 
 							<br>
@@ -118,76 +120,8 @@
 				</div>
 			</article>
 
-			<!--
-			<article id="data" class="wrapper style3"> 
-				<div class="container">
-					<header>
-						<h2>Problem</h2>
-						<p>As HIV remains a significant public health concern in the Philippines, many still lack knowledge and hold misconceptions about HIV transmission and prevention methods despite ongoing efforts to educate the public.</p>
-						<br> 
-						<p>Without schools and communities talking openly about sex and health, lots of women in the Philippines don't know much about HIV/AIDS or how to stay safe. Because of this, they might do things that put them at risk without realizing it, and they might not know what they can do to protect themselves.</p>
-					</header>
-			</article>
-
-			<article id="data" class="wrapper style3">
-				<div class="container">
-					<header>
-						<h2>Research Question</h2>
-						<p>Is there any correlation between one’s education level and their perception of HIV? </p>
-						<br> 
-						<p> What are other factors affecting one’s perception of HIV and other STIs? </p>
-					</header>
-			</article>
-
-			<article id="data" class="wrapper style3">
-				<div class="container">
-					<header>
-						<h2>Null Hypothesis	</h2>
-						<p>One’s educational background does not significantly influence their perception of HIV </p>
-						<br> 
-						<h2> Alternative Hypothesis </h2>
-						<p> Educational background is a determining factor in shaping one’s perception of HIV </p>
-					</header>
-			</article>
-
-			<article id="data" class="wrapper style3">
-				<div class="container">
-					<header>
-						<h2>Action Plan	</h2>
-						<p>Analyze the content of the PiNUT HIV Dataset that focuses on how women in the Philippines perceive HIV in relation to their educational background. </p>
-						<br> 
-
-					</header>
-			</article>
-			-->
-
-			<!--
-			<article id="data" class="wrapper style3">
-				<div class="container">
-					<header>
-						<h2>Sampling Method</h2>
-						<p>The sampling scheme provides data representative of the country as a whole, for urban and rural areas separately, and for each of the country’s administrative regions. The first stage involved a systematic selection of 1,247 primary sampling units (PSUs) distributed by province or HUC. A PSU can be a barangay, a portion of a large barangay, or two or more adjacent small barangays. In the second stage, an equal take of either 22 or 29 sample housing units were selected from each sampled PSU using systematic random sampling</p>
-						<br> 
-
-					</header>
-			</article>
-
-			<article id="data" class="wrapper style3">
-				<div class="container">
-					<header>
-						<h2>Preprocessing</h2>
-						<p>Analyze the content of the PiNUT HIV Dataset that focuses on how women in the Philippines perceive HIV in relation to their educational background. 
-							By sharing what we find, we hope to stimulate discussions and contribute to the development of targeted programs and educational campaigns 
-							aimed at addressing HIV among women. 
-						</p>
-						<br> 
-
-					</header>
-			</article>
-			-->
-
 		<!-- Data -->
-			<article id="data" class="wrapper style3">
+			<article id="data" class="wrapper style1">
 				<div class="container">
 					<header>
 						<h2>Data Collection</h2>
@@ -223,7 +157,11 @@
 							<article class="box style2">
 								<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
 								<h3><a href="#">Data Cleaning</a></h3>
-								<p> The dataset is not yet clean and needs to be preprocessed. *please check the google document*</p>
+								<p> We loaded the data, renamed columns for clarity, and addressed missing values by replacing empty entries with NaN and 
+									removing incomplete data. Irrelevant columns were removed, and all data types were standardized to integers where possible. 
+									The dataset was then split into meaningful sub-components, cleaned further, and recombined. This ensured a streamlined and 
+									accurate dataset ready for analysis.
+								</p>
 							</article>
 						</div>
 					</div>
@@ -235,8 +173,6 @@
 						<a href="https://docs.google.com/spreadsheets/d/1AhSnlxj74eQrpaZXIY5S3HpOHRO0HRKtxblHsPB9Bmw/edit#gid=870346160" class="button large scrolly">Our Processed Dataset!</a> 
 						<br>
 						<br>
-						<a href="https://docs.google.com/document/d/1Afoc7J5113dg22iUM5C6atGn4rGoV3SakzrkpTaCYIs/edit?usp=sharing" style="font-size: 40px; text-align: center;">Google Docs Link</a>
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						<a href="https://docs.google.com/spreadsheets/d/12lBSx_xVpQMDzwn02SqIbkLgAGJ3a_jfpf2ahHebm6U/edit?usp=sharing" style="font-size: 40px; text-align: center;">Initial Dataset Link</a>
 					
 					</footer>
@@ -244,7 +180,125 @@
 			</article>
 
 		<!-- Methods -->
-			<!-- <article id="methods" class="wrapper style3">
+			<article id="methods" class="wrapper style2">
+				<div class="container">
+					<header>
+						<p>How did we explore our data?</p>
+						<h2>Data Exploration</h2>
+						<br>
+						<p>Using a Jupyter Notebook</p>
+					</header>
+					<div class="row aln-center">
+						<div class="col-4 col-6-medium col-12-small">
+							<section class="box style2">
+								<h3 class="mb-5 text-2xl font-bold">Preprocessing</h3>
+								<p>We selected 17 relevant survey questions to determine respondents' perceptions towards HIV and other STIs. 
+									We ensured that these questions were only asked to respondents who had answered "yes" to having heard of STIs and AIDS.
+									We applied various preprocessing techniques such as handling missing values, standardizing numerical features, 
+									and encoding categorical variables. This step ensured that our data was clean and ready for analysis.
+								</p>
+							</section>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<section class="box style2">
+								<h3 class="mb-5 text-2xl font-bold">Visualization</h3>
+								<p>We used Plotly to create interactive pie charts for each survey question. 
+									These visualizations allowed us to understand the distribution of responses (Yes, No, Don't Know) for each question.
+									We configured subplot layouts to neatly display the pie charts, making it easier to compare the response 
+									distributions across all questions.
+								</p>
+							</section>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<section class="box style2">
+								<h3 class="mb-5 text-2xl font-bold">Quantification</h3>
+								<p>We calculated the "Perception Mean" by taking the average response across all relevant survey questions for each respondent. 
+									This provided a single metric to represent overall perception.
+									We displayed the numerical description of the Perception Mean to understand its distribution.
+								</p>
+							</section>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<section class="box style2">
+								<h3 class="mb-5 text-2xl font-bold">Group Analysis</h3>
+								<p>We examined how the Perception Mean varied by different features such as Age, Region, Residence, Language, and Educational Level.
+									We displayed count, mean, minimum, and maximum perception values grouped by the highest educational level.
+								</p>
+							</section>
+						</div>
+					</div>
+					<footer>
+						<br>
+						<h2>Data Visualization</h2>
+						<p>How did we model our data?</p>
+					</footer>
+					<div class="row aln-center">
+						<h3>Visualization for Modeling</h3>
+						<p>We used Plotly to create interactive plots that helped us visualize relationships within the data. 
+							These visualizations not only helped in exploration but also set the stage for more sophisticated modeling. 
+							By understanding the distribution of perception scores, we prepared the data for potential predictive modeling tasks.
+						</p>
+						<div class="col-4 col-6-medium col-12-small">
+							<section class="box style2">
+								<a href="#" class="image featured"><img src="images/pm_boxplot.png" alt="Perception Mean Box Plot" /></a>
+								<h3 class="mb-5 text-2xl font-bold">Box Plot</h3>
+								<p>We created a box plot to visualize the distribution of the Perception Mean by different educational levels. 
+									This helped in identifying any outliers and understanding the central trend and spread of the perception 
+									scores among the different education groups.
+								</p>
+							</section>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<section class="box style2">
+								<a href="#" class="image featured"><img src="images/pm_normaldist.png" alt="Perception Mean Box Plot" /></a>
+								<h3 class="mb-5 text-2xl font-bold">Normal Distribution</h3>
+								<p>We generated scatter plots overlaid with normal distribution curves to visualize the distribution of the 
+									Perception Mean for each educational level group. This provided insights into the shape and spread of the 
+									data and how perception is distributed across different educational backgrounds.
+								</p>
+							</section>
+						</div>
+					</div>
+					<br>
+					<br>
+					<div class="row aln-center">
+						<h3>Linear Regression Model</h3>
+						<p>We used scikit-learn’s Linear Regression model to understand the relationship between our target, "Perception Mean," 
+							and severalfeatures: "Respondent's current age," "Age in 5-year groups," "Highest educational level," and "Highest year of education."
+						</p>
+						<div class="col-4 col-6-medium col-12-small">
+							<section class="box style2">
+								<h3 class="mb-5 text-2xl font-bold">Training and Testing</h3>
+								<p>We split the data into 70% training and 30% testing sets to train and evaluate our model. 
+									The LinearRegression object was instantiated and trained using the fit method on the training data.
+								</p>
+							</section>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<section class="box style2">
+								<h3 class="mb-5 text-2xl font-bold">Evaluation Metrics</h3>
+								<p>Our regression models were assessed using R-squared and Mean Squared Error (MSE). These metrics indicate the model’s performance, 
+									where lower values of MSE imply better accuracy, and R-squared measures the proportion of variance in the dependent variable 
+									explained by the independent variables.
+								</p>
+							</section>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<section class="box style2">
+								<h3 class="mb-5 text-2xl font-bold">Feature Analysis</h3>
+								<p>We analyzed each feature individually to determine its impact on "Perception Mean." This involved creating separate models for 
+									each feature and calculating their coefficients along with the corresponding MSE, and R-squared values.
+								</p>
+							</section>
+						</div>
+					</div>
+				</div>
+				<br>
+				<a href="https://github.com/g-mooncloud/cs132-portfolio/blob/main/data_cleaning/V3.ipynb" class="button large scrolly">View Jupyter Notebook</a> 
+				
+			</article>
+
+			<!-- <article id="methods" class="wrapper style4">
 				<div class="container">
 					<header>
 						<h2>Let's talk about our data science methodology.</h2>
@@ -270,40 +324,45 @@
 						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
 					</footer>
 				</div>
-			</article>
-
-
-			<article id="results" class="wrapper style3">
+			</article> -->
+        
+        <!-- Results -->
+			<article id="results" class="wrapper style1">
 				<div class="container">
 					<header>
-						<h2>Here's what we found out.</h2>
-						<p>Proin odio consequat  sapien vestibulum consequat lorem dolore feugiat.</p>
+						<h2>Results</h2>
 					</header>
 					<div class="row">
-						<div class="col-6 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-								<h3><a href="#">Results</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
-						</div>
-						<div class="col-6 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-								<h3><a href="#">Results</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
-						</div>
+						<article class="box style2">
+							<!-- <a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>-->
+							<p>Here's what we found out.</p>
+							<h3>The Region feature has the most significant impact with an MSE of 0.013297 and an R-squared of 0.155945, 
+								indicating a STRONG role in influencing perception.</h3>
+						</article>
+						<article class="box style2">
+							<!-- <a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>-->
+							<p>Why should we care?</p>
+							<h3>Understanding the factors that influence perceptions towards HIVs and STIs is essential for informing 
+								targeted public health interventions. With these insights, we can contribute to the development of a more 
+								effective educational campaigns and strategies to address misconceptions and reduce stigma.</h3>
+						</article>
+						<article class="box style2">
+							<!-- <a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>-->
+							<p>How does this fit into what we already know?</p>
+							<h3>This aligns with our existing knowledge of the factors that shape perceptions, supporting the importance 
+								of considering regional differences and educational backgrounds when analyzing attitudes towards HIVs and STIs.</h3>
+						</article>
 					</div>
 					<footer>
 						<p>Want to learn more? Take a look at our source codes.</p>
-						<a href="#contact" class="button large scrolly">Github Repo</a>
+						<a href="https://github.com/g-mooncloud/cs132-portfolio" class="button large scrolly">Github Repo</a>
+						
 					</footer>
 				</div>
 			</article>
 
-	
-			<article id="team" class="wrapper style4">
+        <!-- Team -->
+			<!-- <article id="team" class="wrapper style6">
 				<div class="container medium">
 					<header>
 						<h2>We'd like to hear from you.</h2>
@@ -355,7 +414,7 @@
 						</ul>
 					</footer>
 				</div>
-			</article> -->
+			</article>-->
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
