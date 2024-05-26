@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
+	
 	<body class="is-preload">
 
 		<!-- Nav -->
@@ -60,7 +61,8 @@
 				<div class="container">
 					<header>
 						<p>Here's an overview of our project.</p>
-						<h2>Problem (Why are we doing this?)</h2>
+                        <br>
+						<h2>Why Are We Doing This?</h2>
 					</header>
 					<div class="row aln-center">
 						<div class="col-4 col-6-medium col-12-small">
@@ -83,17 +85,27 @@
 					</div>
 
 					<footer>
-					
-						<h2>Solution (What's our plan?)</h2>
 						<!-- <a href="#portfolio" class="button large scrolly">Let's take a look at our data</a> -->
-						<div class="flex flex-col items-center gap-10">	
-							<div class="w-full rounded-md border border-solid border-black bg-gray-100 py-10 px-10 md:max-w-[40rem]">
+						<div class="row aln-center">	
+							<div class="col-8 col-7-large col-12-medium">
 								<section class="box style1">
-									<h3 class="mb-5 text-2xl font-bold">Research Questions</h3>
+                                    <!-- Research Questions-->
+									<h2>What Are We Trying to Find Out?</h2>
 									<p>Is there any correlation between one’s education level and their perception of HIV?</p>
 									<p> What are other factors affecting one’s perception of HIV and other STIs? </p>
 								</section>
 							</div>
+							<div class="col-8 col-7-large col-12-medium">
+								<section class="box style1">
+									<h2>What Are Our Hypotheses?</h2>
+                                    <!-- Null Hypothesis-->
+									<p><strong>Null Hypothesis:</strong> One’s educational background does not significantly influence their perception of HIV</p>
+                                    <!-- Alternative Hypothesis-->
+									<p><strong>Alternative Hypothesis:</strong> Educational background is a determining factor in shaping one’s perception of HIV </p>
+								</section>
+							</div>
+
+							<!--
 							<div class="w-full rounded-md border border-solid border-black bg-gray-100 py-10 px-10 md:max-w-[40rem]">
 								<section class="box style1">
 									<h3 class="mb-5 text-2xl font-bold">Null Hypothesis</h3>
@@ -106,17 +118,18 @@
 									<p> Educational background is a determining factor in shaping one’s perception of HIV </p>
 								</section>
 							</div>	
-							<div class="w-full rounded-md border border-solid border-black bg-gray-100 py-10 px-10 md:max-w-[40rem]">
+                            -->
+
+							<div class="col-8 col-7-large col-12-medium">
 								<section class="box style1">
-									<h3 class="mb-5 text-2xl font-bold">Action Plan</h3>
+                                    <!-- Action Plan -->
+									<h3 class="mb-5 text-2xl font-bold">How Do We Plan to Address This?</h3>
 									<p> Analyze the content of the PiNUT HIV Dataset that focuses on how women in the Philippines 
 										perceive HIV in relation to their educational background. </p>
 								</section>
 							</div>
 						</div>
-					
 					</footer>
-					
 				</div>
 			</article>
 
@@ -131,20 +144,19 @@
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
 								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-								<h3><a href="#">Description of Dataset, Data Collection Process, and Dataset Size</a></h3>
-								<!-- <p>From their website, we used the 2022 Philippine National Demographic and Health Survey Dataset as our initial Dataset.</p> -->
-						 		<p>The dataset is part of a larger dataset, the 2022 Philippines National Demographic and Health Survey (NDHS). 
-									The 2022 NDHS is a nationwide survey with a nationally representative sample of about 35,000 households from 34,232 housing units. 
-									Our dataset primarily focuses on basic demographic indicators, health status, and the knowledge and attitudes regarding HIV/AIDS. 
-									Thus, we are working with sample survey data. The information collected through the NDHS is intended to assist policymakers and 
-									program managers in designing and evaluating programs and strategies for improving the health of the country’s population.
+								<h3><a href="#data">How Did We Collect Our Data?</a></h3>
+								<!-- Description of Dataset, Data Collection Process, and Dataset Size -->
+                                <p>Our dataset is a subset of the 2022 Philippines National Demographic and Health Survey (NDHS). This nationwide survey 
+                                    features a nationally representative sample of approximately 35,000 households from 34,232 housing units. 
+                                    Our focus is on basic demographic indicators, health status, and knowledge and attitudes regarding HIV/AIDS.
 								</p>
 							</article>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
 								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-								<h3><a href="#">Sampling Method</a></h3>
+								<h3><a href="#data">What Was Our Sampling Method?</a></h3>
+                                <!-- Sampling Method-->
 								<!-- <p>With the help of Python, we were able to process our dataset to retain only the needed data.</p> -->
 								<p>The sampling scheme provides data representative of the country as a whole, for urban and rural areas separately, and for each of the country’s 
 									administrative regions. The first stage involved a systematic selection of 1,247 primary sampling units (PSUs) distributed by province or HUC. 
@@ -156,7 +168,8 @@
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
 								<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-								<h3><a href="#">Data Cleaning</a></h3>
+								<h3><a href="#data">How Did We Clean Our Data?</a></h3>
+                                <!-- Data Cleaning -->
 								<p> We loaded the data, renamed columns for clarity, and addressed missing values by replacing empty entries with NaN and 
 									removing incomplete data. Irrelevant columns were removed, and all data types were standardized to integers where possible. 
 									The dataset was then split into meaningful sub-components, cleaned further, and recombined. This ensured a streamlined and 
@@ -166,10 +179,11 @@
 						</div>
 					</div>
 					<footer>
-						<!-- <a href="https://docs.google.com/document/d/1Afoc7J5113dg22iUM5C6atGn4rGoV3SakzrkpTaCYIs/edit?usp=sharing" style="font-size: 40px; text-align: center;">Google Docs Link</a> -->
+						<!-- <a href="https://docs.google.com/document/d/1Afoc7J5113dg22iUM5C6atGn4rGoV3SakzrkpTaCYIs/edit?usp=sharing" style="font-size: 40px; text-align: center;">Google Docs Link</a>
 						<p>By sharing what we find, we hope to stimulate discussions and contribute to the development of targeted programs and educational campaigns 
 							aimed at addressing HIV among women. Please visit the Jupyter Notebook located in the Google Docs for the Data Cleaning details.
 						</p>
+						-->
 						<a href="https://docs.google.com/spreadsheets/d/1AhSnlxj74eQrpaZXIY5S3HpOHRO0HRKtxblHsPB9Bmw/edit#gid=870346160" class="button large scrolly">Our Processed Dataset!</a> 
 						<br>
 						<br>
@@ -188,19 +202,19 @@
 						<br>
 						<p>Using a Jupyter Notebook</p>
 					</header>
-					<div class="row aln-center">
-						<div class="col-4 col-6-medium col-12-small">
+					<div class="row">
+						<div class="col-6 col-6-medium col-12-small">
 							<section class="box style2">
 								<h3 class="mb-5 text-2xl font-bold">Preprocessing</h3>
 								<p>We selected 17 relevant survey questions to determine respondents' perceptions towards HIV and other STIs. 
-									We ensured that these questions were only asked to respondents who had answered "yes" to having heard of STIs and AIDS.
+									These questions were exclusively posed to individuals who indicated awareness of STIs and AIDS.
 									We applied various preprocessing techniques such as handling missing values, standardizing numerical features, 
-									and encoding categorical variables. This step ensured that our data was clean and ready for analysis.
+									and encoding categorical variables to ensure that our data was clean and ready for analysis.
 								</p>
 							</section>
 						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style2">
+						<div class="col-6 col-6-medium col-12-small">
+							<section class="box style3">
 								<h3 class="mb-5 text-2xl font-bold">Visualization</h3>
 								<p>We used Plotly to create interactive pie charts for each survey question. 
 									These visualizations allowed us to understand the distribution of responses (Yes, No, Don't Know) for each question.
@@ -209,7 +223,7 @@
 								</p>
 							</section>
 						</div>
-						<div class="col-4 col-6-medium col-12-small">
+						<div class="col-6 col-6-medium col-12-small">
 							<section class="box style2">
 								<h3 class="mb-5 text-2xl font-bold">Quantification</h3>
 								<p>We calculated the "Perception Mean" by taking the average response across all relevant survey questions for each respondent. 
@@ -218,7 +232,7 @@
 								</p>
 							</section>
 						</div>
-						<div class="col-4 col-6-medium col-12-small">
+						<div class="col-6 col-6-medium col-12-small">
 							<section class="box style2">
 								<h3 class="mb-5 text-2xl font-bold">Group Analysis</h3>
 								<p>We examined how the Perception Mean varied by different features such as Age, Region, Residence, Language, and Educational Level.
@@ -238,7 +252,7 @@
 							These visualizations not only helped in exploration but also set the stage for more sophisticated modeling. 
 							By understanding the distribution of perception scores, we prepared the data for potential predictive modeling tasks.
 						</p>
-						<div class="col-4 col-6-medium col-12-small">
+						<div class="col-6 col-6-medium col-12-small">
 							<section class="box style2">
 								<a href="#" class="image featured"><img src="images/pm_boxplot.png" alt="Perception Mean Box Plot" /></a>
 								<h3 class="mb-5 text-2xl font-bold">Box Plot</h3>
@@ -248,7 +262,7 @@
 								</p>
 							</section>
 						</div>
-						<div class="col-4 col-6-medium col-12-small">
+						<div class="col-6 col-6-medium col-12-small">
 							<section class="box style2">
 								<a href="#" class="image featured"><img src="images/pm_normaldist.png" alt="Perception Mean Box Plot" /></a>
 								<h3 class="mb-5 text-2xl font-bold">Normal Distribution</h3>
@@ -256,6 +270,12 @@
 									Perception Mean for each educational level group. This provided insights into the shape and spread of the 
 									data and how perception is distributed across different educational backgrounds.
 								</p>
+							</section>
+						</div>
+						<div class="col-6 col-6-medium col-12-small">
+							<section class="box style2">
+								<a href="#" class="image featured"><img src="images/masterplot.png" alt="Master Plot" /></a>
+								<h3 class="mb-5 text-2xl font-bold">Masterplot</h3>
 							</section>
 						</div>
 					</div>
@@ -336,8 +356,9 @@
 						<article class="box style2">
 							<!-- <a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>-->
 							<p>Here's what we found out.</p>
-							<h3>The Region feature has the most significant impact with an MSE of 0.013297 and an R-squared of 0.155945, 
+							<!-- <h3>The Region feature has the most significant impact with an MSE of 0.013297 and an R-squared of 0.155945, 
 								indicating a STRONG role in influencing perception.</h3>
+							-->
 						</article>
 						<article class="box style2">
 							<!-- <a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>-->
