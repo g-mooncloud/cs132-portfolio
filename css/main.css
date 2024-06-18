@@ -154,7 +154,7 @@ input, select, textarea {
 		margin: 0 0 0.75em 0;
 	}
 
-	h1 a, h2 a, h3 a, h4 a, h5 a {
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 		text-decoration: none;
 		color: inherit;
 	}
@@ -165,8 +165,8 @@ input, select, textarea {
 
 	h6 {
 		font-style: normal;
-		font-family: Verdana, Geneva, Tahoma, sans-serif;
-		text-align: center;
+		font-family: Verdana, sans-serif;
+		text-align: left;
 	}
 
 	h1 {
