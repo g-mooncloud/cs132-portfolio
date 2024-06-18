@@ -167,6 +167,7 @@ input, select, textarea {
 		font-style: normal;
 		font-family: Verdana, sans-serif;
 		text-align: left;
+		font-weight: 500;
 	}
 
 	h1 {
