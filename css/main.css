@@ -1830,6 +1830,10 @@ input, select, textarea {
 					background-color: #2DAAE4;
 				}
 
+				ul.social li a.fa-discord {
+					background-color: #7289DA;
+				}
+
 				ul.social li a.fa-facebook-f {
 					background-color: #3C5A98;
 				}
@@ -1851,7 +1855,7 @@ input, select, textarea {
 				}
 
 				ul.social li a.fa-github {
-					background-color: #FAFAFA;
+					background-color: #24292E;
 				}
 
 				ul.social li a.fa-rss {
