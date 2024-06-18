@@ -1750,48 +1750,6 @@ input, select, textarea {
 				background-color: #3f3f3f;
 			}
 
-/* Custom Button */
-
-	.custom-button {
-	    display: inline-block;
-	    width: 200px; /* Adjust width as needed */
-	    height: 55px; /* Adjust height as needed */
-	    line-height: 55px; /* Center text vertically */
-	    text-align: center;
-	    font-size: 16px;
-	    font-weight: 600;
-	    color: #fff;
-	    cursor: pointer;
-	    margin: 20px; /* Adjust margin as needed */
-	    border: none;
-	    border-radius: 50px;
-	    background-size: 300% 100%;
-	    transition: background-position .4s ease-in-out, transform .2s ease-in-out;
-	    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-	}
-
-		.custom-button:hover {
-		    background-position: 100% 0;
-		    transform: translateY(-2px); /* Adjust the hover effect */
-		}
-
-		.custom-button:focus {
-		    outline: none;
-		}
-
-		.custom-button.discord-color {
-		    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
-		    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
-		}
-
-		.custom-button.github-color {
-		    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
-		    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
-		}
-			
-    
-
-
 /* List */
 
 	ul {
@@ -2017,27 +1975,27 @@ input, select, textarea {
     		transition: all .4s ease-in-out;
 	}
 
-	.team-hover:hover {
-    		background-position: 100% 0;
-    		-moz-transition: all .4s ease-in-out;
-    		-o-transition: all .4s ease-in-out;
-    		-webkit-transition: all .4s ease-in-out;
-    		transition: all .4s ease-in-out;
-	}
+		.team-hover:hover {
+	    		background-position: 100% 0;
+	    		-moz-transition: all .4s ease-in-out;
+	    		-o-transition: all .4s ease-in-out;
+	    		-webkit-transition: all .4s ease-in-out;
+	    		transition: all .4s ease-in-out;
+		}
 
-	.team-hover:focus {
-    		outline: none;
-	}
+		.team-hover:focus {
+	    		outline: none;
+		}
 
-	.team-hover.discord-color {
-    		background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
-    		box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
-	}
+		.team-hover.discord-color {
+	    		background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+	    		box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+		}
 
-	.team-hover.github-color {
-    		background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
-    		box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
-	}
+		.team-hover.github-color {
+	    		background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+	    		box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+		}
 	
 	.icon {
 		text-decoration: none;
