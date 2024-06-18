@@ -1781,7 +1781,7 @@ input, select, textarea {
 					background-color: #7289DA;
 					border-radius: 6px;
 					box-shadow: inset 0px 0px 0px 1px #282828, inset 0px 2px 1px 0px rgba(255, 255, 255, 0.1);
-					color: ##fffcfc !important;
+					color: #7289DA;
 					display: block;
 					font-size: 26px;
 					height: 48px;
@@ -1822,7 +1822,7 @@ input, select, textarea {
 				}
 
 				ul.social li a.fa-github {
-					background-color: #24292E;
+					background-color: #7289DA;
 				}
 
 				ul.social li a.fa-rss {
@@ -1937,6 +1937,7 @@ input, select, textarea {
 
 		.icon:before {
 			font-size: 1.25em;
+			background-color: #7289DA;
 		}
 
 		.icon > .label {
