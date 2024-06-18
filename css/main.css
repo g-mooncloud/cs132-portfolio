@@ -123,8 +123,16 @@ input, select, textarea {
 		}
 
 	b {
-		color: #fbfbfb;
+	        color: inherit;
+	        text-underline-offset: var(--offset, 0.2em);
+	        text-decoration: underline 0.15em;
+	        transition: --offset 400ms, text-decoration-color 400ms;
 	}
+      
+	        b:hover, b:focus {
+	            --offset: 0.4em;
+	            text-decoration-color: orange;
+	        }
 
 	i, em {
 		font-style: italic;
