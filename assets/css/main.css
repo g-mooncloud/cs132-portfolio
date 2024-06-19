@@ -2218,12 +2218,29 @@ input, select, textarea {
 		}
 
 		#top p {
+			margin-top: 0.35em;
 			font-size: 1.5em;
 			line-height: 1.75em;
+            		color: #242424;
 		}
 
 			#top p a {
-				color: inherit;
+				font-weight: 600;
+		                font-size: 2em;
+		                background: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+		                -webkit-background-clip: text;
+		                -webkit-text-fill-color: transparent;
+		                background-clip: text;
+		
+		                text-align: left;
+		                display: inside;
+		                position: relative;
+		                padding: 1px;
+		                background-color: #f0f0f0; 
+			}
+
+			#top p strong {
+				font-weight: 600;
 			}
 
 	#contact footer {
