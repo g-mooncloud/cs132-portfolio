@@ -2227,6 +2227,7 @@ input, select, textarea {
 			#top p a {
 				font-weight: 700;
 		                font-size: 2.5em;
+				line-height: 1.05em;
 		                background: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
 		                -webkit-background-clip: text;
 		                -webkit-text-fill-color: transparent;
