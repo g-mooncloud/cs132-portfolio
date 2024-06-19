@@ -121,7 +121,7 @@
 					<div class="row">
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<span class="image featured"><img src="images/pic01.jpg" alt="" /></span>
+								<span class="image featured"><img src="images/datacollection_1.png" alt="" /></span>
 								<h3><a>Where Did We Get Our Data?</a></h3>
 								<br>
 								<!-- Description of Dataset, Data Collection Process, and Dataset Size -->
@@ -132,7 +132,7 @@
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<a class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+								<a class="image featured"><img src="images/datacollection_2.png" alt="" /></a>
 								<h3><a>What Was Our Sampling Method?</a></h3>
 								<br>
                                 				<!-- Sampling Method-->
@@ -144,7 +144,7 @@
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<a class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+								<a class="image featured"><img src="images/datacollection_3.png" alt="" /></a>
 								<h3><a>How Did We Clean Our Data?</a></h3>
 								<br>
                                 				<!-- Data Cleaning -->
@@ -259,23 +259,21 @@
 								<h3 class="mb-5 text-2xl font-bold"><a>Nutshell Graph</a></h3>
 								<!-- Nutshell Plot-->
 								<br>
-								<h6>The nutshell graph illustrates the mean perception of sexually transmitted infections (STIs) among different 
-									age groups, separated by their highest educational attainment, based on data from the 2022 Philippines 
-									National Demographic and Health Survey. The y-axis represents the average perception level (ranging from 0.0 to 0.8), 
-									while the x-axis categorizes the respondents into age groups: 15-19, 20-24, 25-29, 30-34, 35-39, 40-44, and 45-49 years old.
+								<h6>The nutshell graph illustrates the mean perception of sexually transmitted infections (STIs) among 
+									different ages, separated by their highest educational attainment, based on data from the 2022 
+									Philippines National Demographic and Health Survey. The y-axis represents the perception level 
+									means (ranging from 0.45 to 0.74), while the x-axis represents the ages (ranging from 15 to 50).
 									<br>
 									<br>
-									The bars are color-coded to indicate the educational levels: blue for primary, purple for secondary, and pink for 
-									higher education. Across all age groups, individuals with higher education exhibit the highest perception mean, 
-									indicating a better understanding or awareness of STIs. Specifically, those with higher education consistently score 
-									higher than 0.6. In contrast, individuals with primary education have the lowest perception means, typically 
-									around 0.50 to 0.55, while those with secondary education fall in between, generally ranging from 0.55 to 0.6.
+									The lines are color-coded to indicate the educational levels: blue for primary, red for secondary, 
+									and green for higher education. Those aged 15 years old with solely a primary level education 
+									possess the lowest perception mean at 0.4538. Meanwhile, those aged 19 years old with a college-level 
+									education possess the highest at 0.7353.
 									<br>
 									<br>
-									The data suggests a strong correlation between educational attainment and STI awareness, with higher education 
-									leading to greater awareness. This trend is consistent across all age groups, though there is minimal deviation 
-									within each educational category among different age groups. Overall, the graph highlights the vital role of 
-									education in enhancing STI awareness.
+									The data suggests a correlation between educational attainment and STI awareness, with higher 
+									education leading to greater awareness. This highlights the vital role of education in enhancing 
+									STI awareness.
 								</h6>
 							</section>
 						</div>
@@ -289,6 +287,7 @@
 						</p>
 						<div class="col-4 col-6-medium col-12-small">
 							<section class="box style2">
+								<a class="image featured"><img src="images/model_1.png" alt="Training and Testing" /></a>
 								<h3 class="mb-5 text-2xl font-bold"><a>Training and Testing</a></h3>
 								<br>
 								<h6>We split the data into 70% training and 30% testing sets to train and evaluate our model. 
@@ -298,6 +297,7 @@
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<section class="box style2">
+								<a class="image featured"><img src="images/model_2.png" alt="Training and Testing" /></a>
 								<h3 class="mb-5 text-2xl font-bold"><a>Evaluation Metrics</a></h3>
 								<br>
 								<h6>Our regression models were assessed using R-squared and Mean Squared Error (MSE). These metrics indicate the model’s performance, 
@@ -308,6 +308,7 @@
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<section class="box style2">
+								<a class="image featured"><img src="images/model_3.png" alt="Training and Testing" /></a>
 								<h3 class="mb-5 text-2xl font-bold"><a>Feature Analysis</a></h3>
 								<br>
 								<h6>We analyzed each feature individually to determine its impact on "Perception Mean." This involved creating separate models for 
@@ -333,14 +334,11 @@
 					</header>
 					<div class="row">
 						<article class="box style2">
-							<!-- <a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>-->
 							<h6>Here's what we found out.</h6> 
-							<h3><a>The Age feature has the most significant impact. <!--with an MSE of 0.015743 and an R-squared of , -->
-								Indicating a STRONG role in influencing perception.</a>
+							<h3><a>The Age feature has the most significant impact. Indicating a STRONG role in influencing perception.</a>
 							</h3>
 						</article>
 						<article class="box style2">
-							<!-- <a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>-->
 							<h6>Why should we care?</h6>
 							<h3><a>Understanding the factors that influence perceptions towards HIVs and STIs is essential for informing 
 								targeted public health interventions. With these insights, we can contribute to the development of a more 
