@@ -115,7 +115,7 @@ input, select, textarea {
 	}
 
 		a:hover {
-			color: #43bff0 !important;
+			color: #d73f89;
 		}
 
 		a img {
@@ -123,12 +123,11 @@ input, select, textarea {
 		}
 
 	b {
-	        padding-bottom: 3px;
+	        padding-bottom: 4px;
 	        background: 
 	        linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1)),
-	        linear-gradient(to right, #ed6ea0, #f7186a , #FBB03B),
-	        linear-gradient(to right, rgba(100, 200, 200, 1), rgba(100, 200, 200, 1));
-	        background-size: 100% 0.1em, 0 0.1em;
+        	linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+	        background-size: 100% 0.17em, 0 0.17em;
 	        background-position: 100% 100%, 0 100%;
 	        background-repeat: no-repeat;
 	        transition: background-size 400ms;
@@ -137,7 +136,7 @@ input, select, textarea {
       
 	    	b:hover, b:focus {
             		text-decoration-color: linear-gradient(to right, #ed6ea0, #f7186a , #FBB03B);
-	        	background-size: 0 0.1em, 100% 0.1em;
+	        	background-size: 0 0.17em, 100% 0.17em;
         	}
 
 
