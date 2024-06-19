@@ -1665,6 +1665,25 @@ input, select, textarea {
 				width: auto;
 			}
 
+/* element */
+    	.element {
+        	display: inline-block;
+        	padding-bottom: 3px;
+    	}
+    
+    	.element:after {
+        	content: '';
+        	display: block;
+        	margin: auto;
+        	height: 2px;
+        	animation: underline 2s infinite;
+    	}
+
+    	@keyframes underline {
+        	0% { width: 0%; background-color:  linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));}
+        	100% {width: 100%; background-color: transparent;}
+    	}
+
 /* Button */
 
 	.buttons {
