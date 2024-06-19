@@ -1677,6 +1677,17 @@ input, select, textarea {
 	        margin: 4px 5px;
 	        cursor: pointer;
 	}
+	
+	.icon-buttons {
+	        color: #fff;
+	        padding: 15px 30px;
+	        text-align: center;
+	        text-decoration: none;
+	        display: inline-block;
+	        font-size: 1.25em;
+	        margin: 4px 5px;
+	        cursor: pointer;
+	}
 
 	.btn-hover {
 	        background-size: 300% 100%;
